@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "ai-game-developer": {
+      "type": "stdio",
+      "command": "C:/Users/pcuser/Desktop/TossMiniApp/My project/Library/mcp-server/win-x64/unity-mcp-server.exe",
+      "args": [
+        "--port=58738",
+        "--plugin-timeout=10000",
+        "--client-transport=stdio"
+      ]
+    }
+  }
+}
