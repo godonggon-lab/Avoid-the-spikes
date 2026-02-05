@@ -18,8 +18,10 @@ public class SpikeSpawner : MonoBehaviour
     [Header("Spike Spacing (간격)")]
     [Tooltip("상하 정적 가시 사이의 좌우 간격")]
     public float staticSpikeHorizontalGap = 0.6f;
-    [Tooltip("옆면 랜덤 가시 사이의 수직 간격")]
-    public float sideSpikeVerticalGap = 0.4f;
+    [Tooltip("옆면 랜덤 가시 사이의 수직 간격 (최소 거리)")]
+    public float sideSpikeVerticalGap = 0.5f;
+    [Tooltip("새가 지나갈 수 있는 안전한 틈새의 크기")]
+    public float safeGapSize = 1.6f; 
 
     [Header("Spike Offset (밀착도)")]
     [Tooltip("옆면 가시가 벽 밖으로 얼마나 튀어나올지 (작을수록 벽에 밀착)")]
@@ -126,8 +128,8 @@ public class SpikeSpawner : MonoBehaviour
 
     void SpawnSideSpikes(float xPos, float rotZ)
     {
+        // 1. 가시가 생성될 수 있는 모든 Y 좌표 리스트 생성
         List<float> possibleY = new List<float>();
-        
         float startY = -topBottomYHeight + 1.2f;
         float endY = topBottomYHeight - 1.2f;
 
@@ -136,7 +138,17 @@ public class SpikeSpawner : MonoBehaviour
             possibleY.Add(y);
         }
 
-        int spikeCount = Random.Range(3, 6);
+        if (possibleY.Count == 0) return;
+
+        // 2. 안전 구역(새가 지나갈 구멍) 정하기
+        // 전체 구간 중 임의의 위치를 안전 구역 중심으로 잡음
+        float safeZoneCenter = Random.Range(startY + (safeGapSize/2f), endY - (safeGapSize/2f));
+        
+        // 3. 안전 구역 내에 포함되는 좌표들은 후보에서 제외
+        possibleY.RemoveAll(y => Mathf.Abs(y - safeZoneCenter) < (safeGapSize / 2f));
+
+        // 4. 나머지 후보 중에서 랜덤하게 가시 생성
+        int spikeCount = Random.Range(4, 7); // 난이도 조절: 4~7개 생성
         spikeCount = Mathf.Min(spikeCount, possibleY.Count);
 
         for (int i = 0; i < spikeCount; i++)

@@ -21,8 +21,9 @@ public class GameManager : MonoBehaviour
     [Header("UI References")]
     public TMP_Text scoreText;
     public TMP_Text berryText;
-    public TMP_Text bestScoreText;   // Added
-    public TMP_Text gamesPlayedText; // Added
+    public TMP_Text bestScoreText;   
+    public TMP_Text resultScoreText; // Added: For showing score on button/panel at Game Over
+    public TMP_Text gamesPlayedText; 
     public GameObject titlePanel;
     public GameObject gameOverPanel;
     public TMP_InputField nicknameInputField; // Added for User Nickname
@@ -212,7 +213,11 @@ public class GameManager : MonoBehaviour
             TossManager.Instance.ReportScore(score);
         }
         
-
+        // Show score on the result UI
+        if (resultScoreText != null)
+        {
+            resultScoreText.text = score.ToString();
+        }
 
         if (gameOverPanel != null) gameOverPanel.SetActive(true);
     }
@@ -226,9 +231,14 @@ public class GameManager : MonoBehaviour
 
     public void OnRankingButtonClicked()
     {
+        Debug.Log("[GameManager] Ranking Button Clicked!");
         if (TossManager.Instance != null)
         {
             TossManager.Instance.ShowLeaderboard();
+        }
+        else
+        {
+            Debug.LogError("[GameManager] TossManager.Instance is null! Is TossManager in the scene?");
         }
     }
 

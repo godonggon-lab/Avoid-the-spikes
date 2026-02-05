@@ -43,8 +43,9 @@ public class TossManager : MonoBehaviour
     {
         try 
         {
-            await AIT.OpenGameCenterLeaderboard();
             Debug.Log("[Toss SDK] 리더보드 웹뷰 호출 성공");
+            await AIT.OpenGameCenterLeaderboard();
+           
         }
         catch (AITException ex) 
         {

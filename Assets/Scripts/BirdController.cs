@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems; // UI 클릭 체크를 위해 추가
 using System.Collections;
 
 public class BirdController : MonoBehaviour
@@ -49,6 +50,24 @@ public class BirdController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            // UI 위를 클릭한 경우(버튼, 입력창 등)에는 게임 시작이나 점프를 무시함
+            bool isOverUI = false;
+            if (EventSystem.current != null)
+            {
+                if (Application.isMobilePlatform)
+                {
+                    // 모바일에서는 첫 번째 터치(-1 또는 0) 확인
+                    isOverUI = EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId);
+                }
+                else
+                {
+                    // PC 에디터 환경
+                    isOverUI = EventSystem.current.IsPointerOverGameObject();
+                }
+            }
+
+            if (isOverUI) return;
+
             if (!hasStarted)
             {
                 hasStarted = true;

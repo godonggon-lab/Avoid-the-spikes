@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\SceneBootstrapper.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\SpikeSpawner.cs" />
+    <Compile Include="Assets\Scripts\CameraAspectController.cs" />
     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
     <Compile Include="Assets\Scripts\CollectableItem.cs" />
     <Compile Include="Assets\Simple 2D Platformer BE2\ReadMe\Scripts\ReadmeBE2.cs" />
