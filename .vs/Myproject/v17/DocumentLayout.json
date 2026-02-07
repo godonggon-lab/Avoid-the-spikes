@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52187F8D-502B-E01F-959A-E7F8516ACBF1}|Assembly-CSharp.csproj|C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Library\\PackageCache\\im.toss.apps-in-toss-unity-sdk@64a66691a6\\Editor\\AppsInTossMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\im.toss.apps-in-toss-unity-sdk@64a66691a6\\Editor\\AppsInTossMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52187F8D-502B-E01F-959A-E7F8516ACBF1}|Assembly-CSharp.csproj|c:\\users\\pcuser\\desktop\\tossminiapp\\myproject\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52187F8D-502B-E01F-959A-E7F8516ACBF1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52187F8D-502B-E01F-959A-E7F8516ACBF1}|Assembly-CSharp.csproj|c:\\users\\pcuser\\desktop\\tossminiapp\\myproject\\assets\\scripts\\tossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{52187F8D-502B-E01F-959A-E7F8516ACBF1}|Assembly-CSharp.csproj|C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\assets\\scripts\\tossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52187F8D-502B-E01F-959A-E7F8516ACBF1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,11 +46,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppsInTossMenu.cs",
+              "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Library\\PackageCache\\im.toss.apps-in-toss-unity-sdk@64a66691a6\\Editor\\AppsInTossMenu.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\im.toss.apps-in-toss-unity-sdk@64a66691a6\\Editor\\AppsInTossMenu.cs",
+              "ToolTip": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Library\\PackageCache\\im.toss.apps-in-toss-unity-sdk@64a66691a6\\Editor\\AppsInTossMenu.cs",
+              "RelativeToolTip": "Library\\PackageCache\\im.toss.apps-in-toss-unity-sdk@64a66691a6\\Editor\\AppsInTossMenu.cs",
+              "ViewState": "AgIAAAQHAAAAAAAAAAASwBEHAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T11:55:07.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -54,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TossManager.cs",
               "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Assets\\Scripts\\TossManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TossManager.cs",
@@ -62,12 +79,11 @@
               "RelativeToolTip": "Assets\\Scripts\\TossManager.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAA2wBYAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T09:24:12.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T09:24:12.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UnityMcpPlugin.Build.cs",
               "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Library\\PackageCache\\com.ivanmurzak.unity.mcp@0.30.2\\Runtime\\UnityMcpPlugin.Build.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.ivanmurzak.unity.mcp@0.30.2\\Runtime\\UnityMcpPlugin.Build.cs",
@@ -78,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Compiled-Sprites-Default.shader",
               "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Temp\\Compiled-Sprites-Default.shader",
               "RelativeDocumentMoniker": "Temp\\Compiled-Sprites-Default.shader",
@@ -89,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Compiled-Unlit-Color.shader",
               "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Temp\\Compiled-Unlit-Color.shader",
               "RelativeDocumentMoniker": "Temp\\Compiled-Unlit-Color.shader",
@@ -100,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "VisualFixer.cs",
               "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Assets\\Scripts\\VisualFixer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\VisualFixer.cs",
@@ -112,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SpikeSpawner.cs",
               "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Assets\\Scripts\\SpikeSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpikeSpawner.cs",
@@ -124,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ColorKeySprite.shader",
               "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Assets\\Shaders\\ColorKeySprite.shader",
               "RelativeDocumentMoniker": "Assets\\Shaders\\ColorKeySprite.shader",
@@ -136,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\pcuser\\Desktop\\TossMiniApp\\Myproject\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
