@@ -49,12 +49,16 @@ public class GameManager : MonoBehaviour
         totalBerries = PlayerPrefs.GetInt("TotalBerries", 0);
     }
 
-    private void Start()
+    private async void Start()
     {
         bird = FindObjectOfType<BirdController>();
         if (mainCamera == null) mainCamera = Camera.main;
         
-
+        // Toss Game Login integration
+        if (TossManager.Instance != null)
+        {
+            await TossManager.Instance.Login();
+        }
 
         isGameStarted = false;
         isGameOver = false;
@@ -255,5 +259,15 @@ public class GameManager : MonoBehaviour
             }
             Debug.Log($"Nickname Updated: {name}");
         }
+    }
+
+    public void SetNickname(string name)
+    {
+        if (nicknameInputField != null)
+        {
+            nicknameInputField.text = name;
+        }
+        PlayerPrefs.SetString("UserNickname", name);
+        Debug.Log($"[GameManager] Nickname auto-set from Toss: {name}");
     }
 }

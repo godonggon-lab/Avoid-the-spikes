@@ -24,7 +24,7 @@ MonoBehaviour:
   mediaPlaybackRequiresUserAction: 0
   graniteHost: 0.0.0.0
   granitePort: 8081
-  viteHost: localhost
+  viteHost: 192.168.0.4
   vitePort: 5173
   outdir: dist
   devServerProfile:
